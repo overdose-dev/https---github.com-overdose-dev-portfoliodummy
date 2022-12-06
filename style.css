@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.menu-bar {
+  background: #368a7c;
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-bar ul li:hover {
+  background: #78c8bb;
+  border-radius: 3px;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: #368a7c;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #4cb1e2;
+}
+
+input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: 1px solid transparent;
+  margin-right: 145px;
+  margin-bottom: 0;
+  margin-top: 16px;
+  width: 15%;
+}
+
+input[type="text"]::placeholder {
+  color: #213d49;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #4cb1e2;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#ikenna {
+  margin-left: 0;
+  margin-right: 250px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#ikenna a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#content {
+  background-color: #fafaf9;
+  width: 100%;
+  position: center;
+}
+
+.grid-container {
+  display: grid;
+  padding: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.grid-item-1 {
+  grid-column: span 3;
+}
+
+.grid-item-2 {
+  display: grid;
+  place-items: center;
+}
+
+.grid-item-3 {
+  grid-column: span 4;
+  display: grid;
+  place-items: center;
+}
+
+/* Image Description */
+.image-banner {
+  position: relative;
+}
+
+.image-banner img {
+  display: block;
+  border-radius: 15px;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 25px;
+}
+
+p {
+  padding: 10px;
+  padding-left: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/*Design Portfolio */
+.title {
+  padding: 25px;
+  padding-left: 0;
+}
+
+.grid-item-4 {
+  grid-column: span 2;
+  display: grid;
+  place-items: center;
+}
+
+.grid-item-5 {
+  grid-column: span 2;
+  display: grid;
+  place-items: center;
+}
